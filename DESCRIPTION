@@ -1,9 +1,11 @@
 Package: Julia
 Type: Package
 Title: Fractal Image Data Generator
-Version: 1.1
-Date: 2014-11-25
-Author: Mehmet Suzen [aut, main]
+Version: 1.2
+Date: 2015-04-08
+Authors@R: c(
+    person("Mehmet", "Suzen",
+    email = "mehmet.suzen@physics.org", role = c("aut", "cre")))
 Maintainer: Mehmet Suzen <mehmet.suzen@physics.org>
 Description: Generates image data for fractals (Julia and Mandelbrot
         sets) on the complex plane in the given region and resolution.
