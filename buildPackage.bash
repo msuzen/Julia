@@ -3,7 +3,7 @@
 # April.2015 GPLv3  
 # Parameters
 PACKAGE_NAME=Julia
-VERSION=_0.3.2
+VERSION=_1.3
 BUILD_DIR=build_tmp
 Rexe=R
 Rscr=Rscript
