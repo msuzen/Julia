@@ -51,7 +51,7 @@ Mehmet Suzen <mehmet.suzen@physics.org>
 }
 \examples{
 # png image 
-  imageN <- 5;
+  imageN <- 5; # increase this to see image
   centre <- 0.0
   L <- 4.0
   image<-MandelImage(imageN,centre,L);

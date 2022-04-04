@@ -63,10 +63,10 @@ JuliaImage(imageN, centre, L, C)
 # Generating png of the Julia set
 # C is 1 minus the golden ratio
 #
-  imageN <- 5;
+  imageN <- 5; # increase this to see images
   centre <- 0.0
   L <- 4.0
-  C <- 1-1.6180339887;# Golden Ratio
+  C <- 1i-1.6180339887;# Golden Ratio
   image <- JuliaImage(imageN,centre,L,C);
   #library(png)
   #file <- "julia1.png"
@@ -75,7 +75,7 @@ JuliaImage(imageN, centre, L, C)
 #  Generating png of the Julia set
 # different coefficient.
 #
-  imageN <- 5;
+  imageN <- 5; # increase this to see images
   centre <- 0.0
   L <- 4.0
   C <- -0.70176-0.3842i
