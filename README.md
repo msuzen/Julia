@@ -7,11 +7,12 @@
 # Julia
 Julia: Fractal Image Data Generator
 
-The package aim at generating Julia and Mandelbrot sets with given initial conditions and resolution. 
+The package aim at generating Julia and Mandelbrot sets with given initial conditions and resolution using
+an escape time algorithm. A resulting data matrix is represents escape times at each matrix entry.
 
 ## Julia Set
 
-[Julia set](https://en.wikipedia.org/wiki/Julia_set) data can be generated with the `JuliaImage` command. 
+[Julia set](https://en.wikipedia.org/wiki/Julia_set) data can be generated with the `JuliaImage` function. 
 An example case, 
 
 ```r
@@ -32,4 +33,39 @@ image(image_matrix[550:1450, 200:1800],
 ```
 
 ![](man/figures/julia0.jpeg) 
+
+## Mandelbrot set 
+
+[Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) data can be generated with `MandelImage` function.
+
+An example to generate the data:
+
+```r
+imageN <- 2000; 
+centre <- 0.0
+L <- 4.0
+image_matrix <- MandelImage(imageN, centre, L);
+```
+
+A sample visualisation with R's hcl palette `Roma` as set values on 
+a grid given as a matrix.
+
+```r
+image(image_matrix[350:1600, 1:1250], 
+      col=hcl.colors(2000,  palette="Roma"),
+      axes=FALSE, useRaster=TRUE)
+```
+![](man/figures/mandelbrot0.jpeg) 
+
+And an other zooming 
+```r
+image(image_matrix[800:1200, 200:600], 
+      col=hcl.colors(2000,  palette="Roma"),
+      axes=FALSE, useRaster=TRUE)
+```
+![](man/figures/mandelbrot1.jpeg) 
+
+## Acknowledgements
+
+Author is grateful to Professor Maitra, Ranjan for his suggestions on reviving the package.
 
