@@ -7,3 +7,29 @@
 # Julia
 Julia: Fractal Image Data Generator
 
+The package aim at generating Julia and Mandelbrot sets with given initial conditions and resolution. 
+
+## Julia Set
+
+[Julia set](https://en.wikipedia.org/wiki/Julia_set) data can be generated with the `JuliaImage` command. 
+An example case, 
+
+```r
+imageN <- 2000
+centre <- 0.0
+L <- 4.0
+C <- -0.8 + 0.156i
+image_matrix <- JuliaImage(imageN, centre, L, C)
+```
+
+A sample visualisation with R's hcl palette `Roma` as set values on 
+a grid given as a matrix.
+
+```r
+image(image_matrix[550:1450, 200:1800], 
+      col=hcl.colors(2000, palette="Roma"), 
+      axes=FALSE, useRaster=TRUE)
+```
+
+![](man/figures/julia0.jpeg) 
+
