@@ -1,10 +1,11 @@
+# Julia
+
+Julia: Fractal Image Data Generator
+
 [![CRAN Version](https://www.r-pkg.org/badges/version/Julia)](https://cran.r-project.org/package=Julia)
 [![Total RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/grand-total/Julia?color=brightgreen)](https://cran.r-project.org/package=Julia)
 [![RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/Julia?color=brightgreen)](https://cran.r-project.org/package=Julia)
 [![License](http://img.shields.io/badge/license-GPLv3-brightgreen.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
-
-# Julia
-Julia: Fractal Image Data Generator
 
 The package aim at generating Julia and Mandelbrot sets with given initial conditions and resolution using
 an escape time algorithm. A resulting data matrix is represents escape times at each matrix entry.
