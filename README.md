@@ -68,6 +68,11 @@ image(image_matrix[800:1200, 200:600],
 ```
 ![](man/figures/mandelbrot1.jpeg) 
 
+## Reference 
+
+The Fractal Geometry of Nature  
+Benoît Mandelbrot, 1982 [wikipedia](https://en.wikipedia.org/wiki/The_Fractal_Geometry_of_Nature).
+
 ## Acknowledgements
 
 Author is grateful to Ranjan Maitra for his suggestions on reviving the package.
